@@ -1,0 +1,97 @@
+nav {
+    height: 700px;
+    }
+    .nav-links {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        position:relative;
+        top:30px;
+        width:80%;
+        margin: auto;
+       
+    }
+    nav a {
+        color: #E7E7E7;
+        text-decoration: none;
+        font-size:20px;
+    }
+      
+    nav img {
+        width: 237px;
+        height: 40px;
+    }  
+    nav #icon {
+        color: white;
+        font-size: x-large;
+        display: none;
+        cursor: pointer;
+    }
+    nav a:hover {
+        color: #dcb658;
+        cursor: pointer;
+    }
+    .landing-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; /* Ensure contrast with video background */
+        font-size: 3rem;
+        z-index: 1; /* Place above the video */
+        text-align: center;
+        padding: 1rem;
+    }
+    @media screen and (max-width: 1200px) {
+        .nav-links{
+          width:100%;
+          top:0;
+         }
+        .landing-title {
+            font-size: 2.5rem; /* Reduce font size */
+         }
+      }
+        
+           
+      @media screen and (max-width: 900px) { 
+      .responsive {    
+         display: flex;  
+         justify-content: space-between;
+         align-items: center;  
+         padding: 0rem 5px;
+         width: 100%;
+        }
+      .nav-links {
+        flex-direction: column;
+        }
+      .nav-links a {
+        display: none;
+        }
+      .nav-links .responsive {
+        display: flex;
+        }
+      nav #icon {
+        display:block;
+          }
+      .nav-links .active{
+        background-color: rgba(0, 0, 0, 0.8);
+        }
+      .nav-links .active a {
+        display:block;
+        }
+      .landing-title {
+        font-size: 2rem; /* Reduce font size
+        padding: 0.6rem;    /* Adjust padding */
+      }
+      }
+      @media (max-width: 600px) {
+      .landing-title {
+        font-size: 1.8rem; /* Further reduce font size */
+        padding: 0.6rem;
+        width: 90%; /* Optional: Limit width for better readability on small screens */
+        word-wrap: break-word;
+        }
+      } 
